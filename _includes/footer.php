@@ -1,5 +1,5 @@
 <footer class="main-footer">
-    <strong>Copyright &copy; 2020 <i class="fab fa-github-square"></i> <a href="#">Leticia Gomes</a>.</strong>
+    <strong>Copyright &copy; 2020 <i class="fab fa-github-square"></i> <a href="https://github.com/L-446/Projeto1Av2.git">Leticia Gomes</a>.</strong>
     All rights reserved.
     
   </footer>
