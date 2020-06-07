@@ -1,7 +1,7 @@
 <?php
     
-    $number1   =   $_POST['numb1'];
-    $number2   =   $_POST['numb1'];
+    @$number1   =   $_POST['numb1'];
+    @$number2   =   $_POST['numb1'];
    
     function resultado($n1,$n2){
         $quad1 = ($n1*$n1);

@@ -1,7 +1,7 @@
 <?php
     
-    $comb   =   $_POST['combustivel'];
-    $dist   =   $_POST['distancia'];;
+    @$comb   =   $_POST['combustivel'];
+    @$dist   =   $_POST['distancia'];
     
     //$dist   =   500;
     //$comb   =   50;
@@ -41,7 +41,6 @@
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="index.php">Home</a></li>
               <li class="breadcrumb-item active">Questão 10</li>
             </ol>
           </div><!-- /.col -->
@@ -86,14 +85,15 @@
             </div>
     
             <?php echo "Consumo médio de seu veículo é: ".consumo($dist,$comb)."Km/lts.";?>
-    
-    
+                </form>
+            </div>
+
       </div><!-- /.container-fluid -->
     </section>
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
-
+ 
   <?php
     include "_includes/footer.php";
   ?>

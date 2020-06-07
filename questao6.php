@@ -1,6 +1,6 @@
 <?php
 
-$prod_desc   =   $_POST['produto'];
+@$prod_desc   =   $_POST['produto'];
 
 function calcular_desconto($valor_produto, $desconto){
     $valor_desconto =  $valor_produto * ($desconto/100);

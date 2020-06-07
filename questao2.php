@@ -1,8 +1,8 @@
 <?php
     
-    $num1   =   $_POST['val1'];
-    $num2   =   $_POST['val2'];
-    $num3   =   $_POST['val3'];
+    @$num1   =   $_POST['val1'];
+    @$num2   =   $_POST['val2'];
+    @$num3   =   $_POST['val3'];
    
     function media($valor1,$valor2, $valor3){
         $media_final = ($valor1+$valor2 + $valor3)/3;

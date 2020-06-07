@@ -1,7 +1,7 @@
 <?php
     
-    $n1   =   $_POST['n1'];
-    $n2   =   $_POST['n2'];
+    @$n1   =   $_POST['n1'];
+    @$n2   =   $_POST['n2'];
     
 
     function soma($som_n1,$som_n2){
@@ -73,7 +73,7 @@
                     <div class="form-group row">
                         <label for="n2" class="col-sm-2 col-form-label">Digite o segundo numero: </label>
                         <div class="col-sm-10">
-                        <input type="number"  class="form-control" id="n2" name="n2" placeholder="Ex.: 35" required>
+                        <input type="number" class="form-control" id="n2" name="n2" placeholder="Ex.: 35" required>
                         </div>
                     </div>
                     </div>

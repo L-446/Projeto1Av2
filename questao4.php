@@ -1,6 +1,6 @@
 <?php
     
-    $numero   =   $_POST['valor'];
+    @$numero   =   $_POST['valor'];
    
     function transformar($val){
         $result = ($val * 3.6);
