@@ -2,27 +2,27 @@
     
     @$comb   =   $_POST['combustivel'];
     @$dist   =   $_POST['distancia'];
-    
-    //$dist   =   500;
-    //$comb   =   50;
 
     function consumo($dist_percorrida,$comb_gasto){
-        $consumo_medio = ($dist_percorrida/$comb_gasto);
+        @$consumo_medio = ($dist_percorrida/$comb_gasto);
         return $consumo_medio;
     }
 ?>
 
-
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>PHP AdminLTE 3 | Dashboard</title>
+  <link rel="icon" href="dist/img/php.ico">
+
   <?php
     include "_includes/header.php";
-    ?>
-</head>
+  ?>
+  
+  </head>
+  
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
 
@@ -56,7 +56,7 @@
                     <!-- Horizontal Form -->
             <div class="card card-info">
                 <div class="card-header">
-                    <h3 class="card-title">Horizontal Form</h3>
+                    <h3 class="card-title"><b>Formulario Km/lts</b></h3>
                 </div>
                 <!-- /.card-header -->
                 <!-- form start -->
@@ -78,15 +78,16 @@
                     <!-- /.card-body -->
                     <div class="card-footer">
                     <button type="submit" class="btn btn-info">Calcular</button>
-                    <button type="reset" class="btn btn-default float-right">Cancelar</button>
                     </div>
                     <!-- /.card-footer -->
                 </form>
             </div>
-    
-            <?php echo "Consumo médio de seu veículo é: ".consumo($dist,$comb)."Km/lts.";?>
-                </form>
-            </div>
+
+            <div class="alert alert-info alert-dismissible">
+                  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                  <h5><i class="icon fas fa-check"></i><b>RESULTADO!</b></h5>
+                  <p> <?php echo "Consumo médio de seu veículo é: ".consumo($dist,$comb)."Km/lts.";?></p>
+                </div>
 
       </div><!-- /.container-fluid -->
     </section>

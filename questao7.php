@@ -1,10 +1,19 @@
 <?php
-    @$gerar  =   $_POST['quantidade'];
-
-    for($i=1; $i<=$gerar;$i++){
-      if($i % 2 == 0){
-      }
-
+    $quantity = 10;
+    $arr; 
+    $min = 1;
+    $max = 100;
+    
+    for($i=0; $i < $quantity; $i++)
+    {
+       $arr[$i] = rand($min, $max);
+       $min += 10;
+       $max += 10;
+    }
+    
+    for($i = 0; $i < $quantity; $i++)
+    {
+      echo $arr[$i] . " ";
     }
 ?>
 
@@ -56,7 +65,7 @@
                    <!-- Horizontal Form -->
                    <div class="card card-info">
                 <div class="card-header">
-                    <h3 class="card-title">Gerar Numeros</h3>
+                    <h3 class="card-title"><b> Gerar Numeros</b></h3>
                 </div>
                 <!-- /.card-header -->
                 <!-- form start -->
@@ -65,18 +74,23 @@
                     <div class="form-group row">
                         <label for="quantidade" class="col-sm-2 col-form-label">Numeros</label>
                         <div class="col-sm-10">
-                        <input class="form-control" id="quantidade" name="quantidade" disabled="disabled" placeholder="<?php  echo rand(1,100). "";?>" >
+                        <input class="form-control" id="quantidade" name="quantidade" disabled="disabled" placeholder=">" >
                         </div>
                     </div>
                     </div>
                     <!-- /.card-body -->
                     <div class="card-footer">
-                    <button type="submit" class="btn btn-info">Somar</button>
+                    <button type="botton" class="btn btn-info">Somar</button>
                     </div>
                     <!-- /.card-footer -->
                 </form>
             </div>
             
+            <div class="alert alert-info alert-dismissible">
+                  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                  <h5><i class="icon fas fa-check"></i><b>RESULTADO!</b></h5>
+                  <p> <?php echo "Seu salario Atualmente é: " .number_format($salarioAtual, 2, ',', '.');?></p>
+            </div>
 
       </div><!-- /.container-fluid -->
     </section>

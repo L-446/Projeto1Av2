@@ -58,7 +58,7 @@
                     <!-- Horizontal Form -->
             <div class="card card-info">
                 <div class="card-header">
-                    <h3 class="card-title">Formulario media</h3>
+                    <h3 class="card-title"><b>Formulario Media</b></h3>
                 </div>
                 <!-- /.card-header -->
                 <!-- form start -->
@@ -85,14 +85,18 @@
                     </div>
                      <!-- /.card-body -->
                      <div class="card-footer">
-                    <button type="submit" class="btn btn-info">Calcular</button>
-                    <button type="reset" class="btn btn-default float-right">Cancelar</button>
+                    <button type="botton" class="btn btn-info">Calcular</button>
                     </div>
                     <!-- /.card-footer -->
                 </form>
             </div>
+
+                <div class="alert alert-info alert-dismissible">
+                  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                  <h5><i class="icon fas fa-check"></i><b>RESULTADO!</b></h5>
+                  <p> <?php echo "Sua Media Final é: ".media($num1,$num2,$num3);?></p>
+                </div>
     
-            <?php echo "Sua Media Final é: ".media($num1,$num2,$num3);?>
 
       </div><!-- /.container-fluid -->
     </section>

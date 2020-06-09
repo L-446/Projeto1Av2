@@ -56,7 +56,7 @@
                     <!-- Horizontal Form -->
             <div class="card card-info">
                 <div class="card-header">
-                    <h3 class="card-title">Formulario Quadrados</h3>
+                    <h3 class="card-title"><b> Fomulario m/s para Km/h</b></h3>
                 </div>
                 <!-- /.card-header -->
                 <!-- form start -->
@@ -71,13 +71,17 @@
                     </div>
                      <!-- /.card-body -->
                      <div class="card-footer">
-                    <button type="submit" class="btn btn-info">Calcular</button>
+                    <button type="botton" class="btn btn-info">Calcular</button>
                     </div>
                     <!-- /.card-footer -->
                 </form>
             </div>
     
-            <?php echo "O resultado é: ".transformar($numero);?>
+            <div class="alert alert-info alert-dismissible">
+                  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                  <h5><i class="icon fas fa-check"></i><b>RESULTADO!</b></h5>
+                  <p><?php echo "O resultado é: ".transformar($numero). "Km/h";?></p>
+            </div>
 
       </div><!-- /.container-fluid -->
     </section>

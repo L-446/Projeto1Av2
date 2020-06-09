@@ -71,7 +71,7 @@ if($num01  && $num02){
                     <!-- Horizontal Form -->
             <div class="card card-info">
                 <div class="card-header">
-                    <h3 class="card-title">Operações</h3>
+                    <h3 class="card-title"><b>Formulario Operações</b></h3>
                 </div>
                 <!-- /.card-header -->
                 <!-- form start -->
@@ -84,11 +84,9 @@ if($num01  && $num02){
        <label for="txtNumero2" class="col-sm-2 col-form-label">Número 2: </label><br>
            <input type="number" class="form-control" id="txtNumero2" name="txtNumero2" placeholder="Ex.: 15" required>
                     </div>
-    </div>
 
-    <div class="card-body">
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-md-2">
                 <div class="form-group">
                 <label>Operação:</label>
                     <select class="form-control select2" style="width: 100%;" name="slOperacao">
@@ -101,14 +99,17 @@ if($num01  && $num02){
               </div>
             </div>
     </div>
-                <div class="card-footer">
-                <input type="submit" name="btnCalcular" class="btn btn-info" value="Calcular">
-                </div>
+                  <div class="card-footer">
+                    <button type="botton" class="btn btn-info">Calcular</button>
+                    </div>
      </form>
-
      </div>
-    
-     <?php echo "O resultado do seu calculo é: ".$resul ;?>
+
+     <div class="alert alert-info alert-dismissible">
+                  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                  <h5><i class="icon fas fa-check"></i><b>RESULTADO!</b></h5>
+                  <p><?php echo "O resultado do seu calculo é: ".$resul ;?></p>
+                </div>
 
      </div><!-- /.container-fluid -->
     </section>

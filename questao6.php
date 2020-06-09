@@ -1,20 +1,11 @@
 <?php
 
 @$prod_desc   =   $_POST['produto'];
+$desconto = 7 / 100;
+$comDesconto = $prod_desc - ($desconto*$prod_desc );
 
-function calcular_desconto($valor_produto, $desconto){
-    $valor_desconto =  $valor_produto * ($desconto/100);
-    $valor_final =  $valor_produto - $valor_desconto;
-    return $valor_final;
-
-}
-?>
-<?php
-
-$desconto = array(7);
 
 ?>
-
 
 <!DOCTYPE html>
 <html>
@@ -63,7 +54,7 @@ $desconto = array(7);
                     <!-- Horizontal Form -->
             <div class="card card-info">
                 <div class="card-header">
-                    <h3 class="card-title">Formulario Desconto</h3>
+                    <h3 class="card-title"><b>Formulario Desconto</b></h3>
                 </div>
                 <!-- /.card-header -->
                 <!-- form start -->
@@ -76,18 +67,23 @@ $desconto = array(7);
                         </div>
                     </div>
                     </div>
-                
-                    <?php echo "O Preço do Produto é: ".($prod_desc)." R$"?></p>
-                    <?php echo "O Desconto valor é: ".$desconto[0]."%"?></p>
-                    <?php echo "O Valor Total é: ".calcular_desconto($prod_desc, $desconto[0]) ." R$"?></p>
                         
                      <!-- /.card-body -->
                      <div class="card-footer">
                     <button type="submit" class="btn btn-info">Calcular</button>
                     </div>
                     <!-- /.card-footer -->
+                    
                 </form>
             </div>
+            
+            <div class="alert alert-info alert-dismissible">
+                      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                      <h5><i class="icon fas fa-check"></i><b>RESULTADO!</b></h5>
+                      <p><?php echo "O Preço do Produto é: ". number_format($prod_desc, 2, ',', '.')." R$"?></p>
+                      <?php echo "O valor do Desconto é: ". number_format($desconto, 2, ',', '.')."%"?></p>
+                      <?php echo "O Valor Total é: ". number_format($comDesconto, 2, ',', '.')." R$"?></p></p>
+                    </div>
 
       </div><!-- /.container-fluid -->
     </section>

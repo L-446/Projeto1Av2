@@ -1,6 +1,6 @@
 <?php
 
-    $precoVista  =   $_POST['val'];
+    @$precoVista  =   $_POST['val'];
     $juros = 16 / 100.0; 
     $precoJuros = $precoVista + ($juros * $precoVista);
     $valorParcela = $precoJuros / 10
@@ -55,7 +55,7 @@
                     <!-- Horizontal Form -->
             <div class="card card-info">
                 <div class="card-header">
-                    <h3 class="card-title">Formulario soma</h3>
+                    <h3 class="card-title"><b>Formulario Acrescimo e Divisão</b></h3>
                 </div>
                 <!-- /.card-header -->
                 <!-- form start -->
@@ -76,7 +76,15 @@
                 </form>
             </div>
     
-            <?php echo ("<p>Valor a vista: R$ $precoVista</p>"); echo ("<p>Valor com juros de 16%: R$ $precoJuros</p>"); echo ("<p>em 10 parcelas de: R$ $valorParcela</p>");?>
+            <div class="alert alert-info alert-dismissible">
+                  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                  <h5><i class="icon fas fa-check"></i><b>RESULTADO!</b></h5>
+                  <p><?php
+                   echo ("<p>Valor a vista: R$ ". number_format($precoVista, 2, ',', '.'));
+                   echo ("<p>Valor com juros de 0,16 %: R$ ".number_format($precoJuros, 2, ',', '.')); 
+                   echo ("<p>em 10 parcelas de: R$" .number_format($valorParcela, 2, ',', '.'));
+                   ?></p>
+                </div>
 
       </div><!-- /.container-fluid -->
     </section>
