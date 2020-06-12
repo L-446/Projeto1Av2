@@ -107,7 +107,6 @@ if($num01  && $num02){
      </div>
 
      <div class="alert alert-info alert-dismissible">
-                  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
                   <h5><i class="icon fas fa-check"></i><b>RESULTADO!</b></h5>
                   <p><?php echo "O resultado do seu calculo é: ".$resul ;?></p>
                 </div>

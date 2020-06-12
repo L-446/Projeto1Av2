@@ -84,7 +84,6 @@
             </div>
 
             <div class="alert alert-info alert-dismissible">
-                  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
                   <h5><i class="icon fas fa-check"></i><b>RESULTADO!</b></h5>
                   <p> <?php echo "Consumo médio de seu veículo é: ".consumo($dist,$comb)."Km/lts.";?></p>
                 </div>

@@ -62,7 +62,7 @@
                 </div>
                 <!-- /.card-header -->
                 <!-- form start -->
-                <form name="form_calculo" id="form_calculo" action="" method="POST" class="form-horizontal">
+                <form class="form-horizontal" onsubmit="openModal()" name="form_calculo" id="form_calculo" action="" method="POST">
                     <div class="card-body">
                     <div class="form-group row">
                         <label for="n1" class="col-sm-2 col-form-label">Digite o primeiro numero: </label>
@@ -77,19 +77,19 @@
                         </div>
                     </div>
                     </div>
-                    <!-- /.card-body -->
-                    <div class="card-footer">
+                   <!-- /.card-body -->
+                   <div class="card-footer">
                     <button type="botton" class="btn btn-info">Calcular</button>
                     </div>
                     <!-- /.card-footer -->
                 </form>
             </div>
 
-            <div class="alert alert-info alert-dismissible">
-                  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                <div class="alert alert-info alert-dismissible">
                   <h5><i class="icon fas fa-check"></i><b>RESULTADO!</b></h5>
-                  <p><?php echo "O resultado do seu calculo é: ".soma($n1,$n2);?></p>
+                  <p> <?php echo "O resultado do seu calculo é: ".soma($n1,$n2);?></p>
                 </div>
+
 
       </div><!-- /.container-fluid -->
     </section>

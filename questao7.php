@@ -114,7 +114,6 @@
             </div>
             
             <div class="alert alert-info alert-dismissible">
-                  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
                   <h5><i class="icon fas fa-check"></i><b>RESULTADO!</b></h5>
                   <p><?php echo "A soma dos 10 numeros pares é: ".array_sum($b);?></p>
                 </div>
