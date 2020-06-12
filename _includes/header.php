@@ -39,9 +39,8 @@
       <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contatos</a>
               <div class="dropdown-menu" aria-labelledby="dropdown01">
-                <img src="img/insta.png" style="width:18px"  id="insta"><a target="_blank" href="https://www.instagram.com/lleticia_13/?hl=pt-br">@lleticia_13</a></br>
-                  <img src="img/Whats.png" style="width:18px"  id="Whats"><a target="_blank" href="https://wa.me/5588997783470?text=Olá%20Leticia">@Letícia</a></br>
-                  <img src="img/face.png" style="width:18px"  id="face"><a target="_blank" href="https://www.facebook.com/leh.rodrigues.30/">@LetíciaGomes</a></br>
+                <img src="dist/img/insta.png" style="width:18px"  id="insta"><a target="_blank" href="https://www.instagram.com/lleticia_13/?hl=pt-br">@lleticia_13</a></br>
+                  <img src="dist/img/whats.png" style="width:18px"  id="Whats"><a target="_blank" href="https://wa.me/5588997783470?text=Olá%20Leticia">@Letícia</a></br>
               </div>
             </li>
     </ul>

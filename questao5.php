@@ -1,17 +1,17 @@
 <?php
     
-    @$anoA   =   $_POST['anoAtual'];
-    $salario = 1000.00;
-    $percentual = 1.5/100;
-    $salarioAtual = $salario + ($percentual * $salario);
-    $anoContarto = 2015;
+    @$anoA          =   $_POST['anoAtual'];
+    $salario        = 1000.00;
+    $percentual     = 1.5/100;
+    $salarioAtual   = $salario + ($percentual * $salario);
+    $anoAumento     = 2016;
 
 
-    while($anoContarto <= $anoA) {
+    while($anoAumento < $anoA) {
       
+      $anoAumento = $anoAumento + 1;
       $percentual = 2 * $percentual;
       $salarioAtual =  $salario + ($percentual * $salario);
-      $anoContarto = $anoContarto + 1;
   }
 
  ?>

@@ -59,25 +59,27 @@
     </div>
 
     <section class="content">
+  
+    <h1 class="cover-heading" style="text-align: center;"><b>Programação WEB</b></h1>
+    <div class="callout callout-default">
 
-    <h1 class="cover-heading" style="text-align: center;">Programção WEB</h1>
-    <p class="lead">Este é um Projeto desenvolvido para obtenção da primeira no da AV2. O projeto esta distribuido na resolução de 10 questões e foi contruido com PHP, JAVASCRIPT, HTML e CSS. Abaixo estão cards onde você pode descubrir como usar e manipular as linguagens.</p>
-
+                  <p class="lead">Este é um Projeto desenvolvido para obtenção da primeira no da AV2. O projeto esta distribuido na resolução de 10 questões (que podem ser encontradas no menu lateral) e foi contruido com PHP, JAVASCRIPT, HTML e CSS. Abaixo estão cards onde você pode ter uma base das linguagens e perceber como o projeto foi construido.</p>
+                </div>
     <div class="container-fluid">
         <!-- Small boxes (Stat box) -->
         <div class="row">
           <div class="col-lg-3 col-6">
             <!-- small box -->
-            <div class="small-box bg-info">
+            <div class="small-box bg-maroon">
               <div class="inner">
                 <h3>PHP</h3>
 
-                <p>Acesse para saber mais</p>
+                <p>Hypertext Preprocessor</p>
               </div>
               <div class="icon">
                 <i class="fab fa-php"></i>
               </div>
-              <a href="https://www.php.net/manual/pt_BR/index.php"  target="_blank" class="small-box-footer">PHP <i class="fas fa-arrow-circle-right"></i></a>
+              <a href="https://www.php.net/manual/pt_BR/index.php"  target="_blank" class="small-box-footer">More info  <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
   
@@ -87,42 +89,42 @@
               <div class="inner">
                 <h3>CSS</h3>
 
-                <p>Acesse para saber mais</p>
+                <p>Cascading Style Sheets</p>
               </div>
               <div class="icon">
               <i class="far fa-file-code"></i>
               </div>
-              <a href="https://www.w3schools.com/css/"  target="_blank" class="small-box-footer">CSS <i class="fas fa-arrow-circle-right"></i></a>
+              <a href="https://www.w3schools.com/css/"  target="_blank" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
           
           <div class="col-lg-3 col-6">
             <!-- small box -->
-            <div class="small-box bg-info">
+            <div class="small-box bg-default">
               <div class="inner">
                 <h3>HTML</h3>
 
-                <p>Acesse para saber mais</p>
+                <p>Hypertext Markup Language</p>
               </div>
               <div class="icon">
                <i class="fab fa-html5"></i>
               </div>
-              <a href="https://www.w3schools.com/html/"  target="_blank" class="small-box-footer">HTML <i class="fas fa-arrow-circle-right"></i></a>
+              <a href="https://www.w3schools.com/html/"  target="_blank" class="small-box-footer" style="color: black;">More info <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
          
           <div class="col-lg-3 col-6">
             <!-- small box -->
-            <div class="small-box bg-info">
+            <div class="small-box bg-warning">
               <div class="inner">
                 <h3>JS</h3>
 
-                <p>Acesse para saber mais</p>
+                <p>JavaScript</p>
               </div>
               <div class="icon">
                 <i class="fab fa-js-square"></i>
               </div>
-              <a href="https://www.w3schools.com/js/"  target="_blank" class="small-box-footer">JAVASCRIPT  <i class="fas fa-arrow-circle-right"></i></a>
+              <a href="https://www.w3schools.com/js/"  target="_blank" class="small-box-footer">More info<i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
         </div>

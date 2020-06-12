@@ -1,10 +1,11 @@
 <?php
  
-$num01 = filter_input(INPUT_POST, "txtNumero1");
-$num02 = filter_input(INPUT_POST, "txtNumero2");
-$opera = filter_input(INPUT_POST, "slOperacao");
-$resul = "";
+@$num01 = $_POST["txtNumero1"];
+@$num02 = $_POST["txtNumero2"];
+@$opera = $_POST["slOperacao"];
+@$resul = "";
  
+
 if($num01  && $num02){
   switch($opera){
     case "+":

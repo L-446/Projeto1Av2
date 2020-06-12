@@ -1,22 +1,43 @@
 <?php
-    $quantity = 10;
-    $arr; 
-    $min = 1;
-    $max = 100;
-    
-    for($i=0; $i < $quantity; $i++)
-    {
-       $arr[$i] = rand($min, $max);
-       $min += 10;
-       $max += 10;
-    }
-    
-    for($i = 0; $i < $quantity; $i++)
-    {
-      echo $arr[$i] . " ";
-    }
-?>
 
+    //$n1 = 1;
+    //$n2= 100;
+
+    @$n1   =   $_POST['n1'];
+    @$n2   =   $_POST['n2'];
+    $j     =   0;
+    $soma  =   0;
+    
+    //Alimentando o vetor a com 100 Posições
+    for($i=1; $i<=100; $i++){
+      $a[$i-1] = rand($n1,$n2);
+    }
+
+    //Numeros pares e armazenar no vetor B 10 posições
+    for($i=1; $i<=100; $i++){
+     
+      //Numero é par?
+      if(($a[$i-1] % 2) == 0 ){
+        //controlando 10 valores no B
+        if($j <= 9){
+          $b[$j] = $a[$i-1];
+          //Soma dos numeros pares
+          $soma = $soma + $b[$j];
+        }
+          $j++;
+        
+      }
+    }
+
+    //var_dump($a);
+    //echo"<br>";
+    //var_dump($b);
+    //echo"<br>";
+    //echo "Soma = ".$soma;
+    //echo"<br>";
+    //echo "Soma com Array =".array_sum($b);
+
+?>
 
 <!DOCTYPE html>
 <html>
@@ -70,17 +91,23 @@
                 <!-- /.card-header -->
                 <!-- form start -->
                 <form name="form_numeros" id="form_numeros" action="" method="POST" class="form-horizontal">
-                    <div class="card-body">
+                <div class="card-body">
                     <div class="form-group row">
-                        <label for="quantidade" class="col-sm-2 col-form-label">Numeros</label>
+                        <label for="n1" class="col-sm-2 col-form-label">Digite o primeiro numero: </label>
                         <div class="col-sm-10">
-                        <input class="form-control" id="quantidade" name="quantidade" disabled="disabled" placeholder=">" >
+                        <input type="number"  class="form-control" id="n1" name="n1" placeholder="Ex.: 1" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="n2" class="col-sm-2 col-form-label">Digite o segundo numero: </label>
+                        <div class="col-sm-10">
+                        <input type="number" class="form-control" id="n2" name="n2" placeholder="Ex.: 35" required>
                         </div>
                     </div>
                     </div>
                     <!-- /.card-body -->
                     <div class="card-footer">
-                    <button type="botton" class="btn btn-info">Somar</button>
+                    <button type="botton" class="btn btn-info">Calcular</button>
                     </div>
                     <!-- /.card-footer -->
                 </form>
@@ -89,8 +116,8 @@
             <div class="alert alert-info alert-dismissible">
                   <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
                   <h5><i class="icon fas fa-check"></i><b>RESULTADO!</b></h5>
-                  <p> <?php echo "Seu salario Atualmente é: " .number_format($salarioAtual, 2, ',', '.');?></p>
-            </div>
+                  <p><?php echo "A soma dos 10 numeros pares é: ".array_sum($b);?></p>
+                </div>
 
       </div><!-- /.container-fluid -->
     </section>

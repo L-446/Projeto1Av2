@@ -15,7 +15,7 @@
           <img src="dist/img/eu1.jpeg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">Leticia Gomes</a>
+          <div style="color: white;" class="d-block">Leticia Gomes</div>
         </div>
       </div>
 
@@ -25,20 +25,20 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
                <li class="nav-item">
-            <a href="#" class="nav-link active">
-              <i class="nav-icon fas fa-th"></i>
+            <div class="nav-link active">
+              <i class="nav-icon fas fa-edit"></i>
               <p>
                 Lista PHP
                 <span class="right badge badge-danger">10 Questões</span>
               </p>
-            </a>
+            </div>
           </li>
           <li class="nav-item has-treeview">
           <a href="#" class="nav-link active">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <i class="nav-icon fas fa-copy"></i>
               <p>
                 Questões
-                <i class="right fas fa-angle-left"></i>
+                <i class="right fas fa-angle-right"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
