@@ -79,6 +79,10 @@
                         <input type="number" class="form-control" id="anoAtual" name="anoAtual" placeholder="Ex.: 2020" required>
                         </div>
                     </div>
+                    <div class="alert alert-info alert-dismissible">
+                          <h5><i class="icon fas fa-check"></i><b>RESULTADO!</b></h5>
+                          <p> <?php echo "Seu salario Atualmente é: " .number_format($salarioAtual, 2, ',', '.');?></p>
+                    </div>
                     </div>
                     <!-- /.card-body -->
                     <div class="card-footer">
@@ -86,11 +90,6 @@
                     </div>
                     <!-- /.card-footer -->
                 </form>
-            </div>
-    
-            <div class="alert alert-info alert-dismissible">
-                  <h5><i class="icon fas fa-check"></i><b>RESULTADO!</b></h5>
-                  <p> <?php echo "Seu salario Atualmente é: " .number_format($salarioAtual, 2, ',', '.');?></p>
             </div>
 
       </div><!-- /.container-fluid -->

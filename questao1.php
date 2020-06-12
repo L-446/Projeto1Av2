@@ -76,19 +76,18 @@
                         <input type="number" class="form-control" id="n2" name="n2" placeholder="Ex.: 35" required>
                         </div>
                     </div>
+                    <div class="alert alert-info alert-dismissible">
+                      <h5><i class="icon fas fa-check"></i><b>RESULTADO!</b></h5>
+                      <p> <?php echo "O resultado do seu calculo é: ".soma($n1,$n2);?></p>
+                    </div>
                     </div>
                    <!-- /.card-body -->
                    <div class="card-footer">
-                    <button type="botton" class="btn btn-info">Calcular</button>
+                   <button type="botton" class="btn btn-info">Calcular</button>
                     </div>
                     <!-- /.card-footer -->
                 </form>
             </div>
-
-                <div class="alert alert-info alert-dismissible">
-                  <h5><i class="icon fas fa-check"></i><b>RESULTADO!</b></h5>
-                  <p> <?php echo "O resultado do seu calculo é: ".soma($n1,$n2);?></p>
-                </div>
 
 
       </div><!-- /.container-fluid -->
@@ -101,6 +100,11 @@
   <?php
     include "_includes/footer.php";
   ?>
+    <script>
+        $(document).ready(function(){
+          $('.toast').toast('show');
+        });
+    </script>
 
 </body>
 </html>

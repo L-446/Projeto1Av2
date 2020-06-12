@@ -74,6 +74,10 @@
                         <input type="number" min="1" class="form-control" id="combustivel" name="combustivel" placeholder="Ex.: 50 lts" required>
                         </div>
                     </div>
+                    <div class="alert alert-info alert-dismissible">
+                      <h5><i class="icon fas fa-check"></i><b>RESULTADO!</b></h5>
+                      <p> <?php echo "Consumo médio de seu veículo é: ".consumo($dist,$comb)."Km/lts.";?></p>
+                    </div>
                     </div>
                     <!-- /.card-body -->
                     <div class="card-footer">
@@ -82,11 +86,6 @@
                     <!-- /.card-footer -->
                 </form>
             </div>
-
-            <div class="alert alert-info alert-dismissible">
-                  <h5><i class="icon fas fa-check"></i><b>RESULTADO!</b></h5>
-                  <p> <?php echo "Consumo médio de seu veículo é: ".consumo($dist,$comb)."Km/lts.";?></p>
-                </div>
 
       </div><!-- /.container-fluid -->
     </section>

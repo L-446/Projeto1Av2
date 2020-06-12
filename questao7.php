@@ -104,6 +104,10 @@
                         <input type="number" class="form-control" id="n2" name="n2" placeholder="Ex.: 35" required>
                         </div>
                     </div>
+                    <div class="alert alert-info alert-dismissible">
+                      <h5><i class="icon fas fa-check"></i><b>RESULTADO!</b></h5>
+                      <p><?php echo "A soma dos 10 numeros pares é: ".array_sum($b);?></p>
+                    </div>
                     </div>
                     <!-- /.card-body -->
                     <div class="card-footer">
@@ -112,11 +116,6 @@
                     <!-- /.card-footer -->
                 </form>
             </div>
-            
-            <div class="alert alert-info alert-dismissible">
-                  <h5><i class="icon fas fa-check"></i><b>RESULTADO!</b></h5>
-                  <p><?php echo "A soma dos 10 numeros pares é: ".array_sum($b);?></p>
-                </div>
 
       </div><!-- /.container-fluid -->
     </section>

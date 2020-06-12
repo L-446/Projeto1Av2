@@ -66,6 +66,12 @@ $comDesconto = $prod_desc - ($desconto*$prod_desc );
                         <input type="number" min="1" class="form-control" id="produto" name="produto" placeholder="Ex.: 1000R$" required>
                         </div>
                     </div>
+                    <div class="alert alert-info alert-dismissible">
+                      <h5><i class="icon fas fa-check"></i><b>RESULTADO!</b></h5>
+                      <p><?php echo "O Preço do Produto é: ". number_format($prod_desc, 2, ',', '.')." R$"?></p>
+                      <?php echo "O valor do Desconto é: ". number_format($desconto, 2, ',', '.')."%"?></p>
+                      <?php echo "O Valor Total é: ". number_format($comDesconto, 2, ',', '.')." R$"?></p></p>
+                    </div>
                     </div>
                         
                      <!-- /.card-body -->
@@ -76,13 +82,6 @@ $comDesconto = $prod_desc - ($desconto*$prod_desc );
                     
                 </form>
             </div>
-            
-            <div class="alert alert-info alert-dismissible">
-                      <h5><i class="icon fas fa-check"></i><b>RESULTADO!</b></h5>
-                      <p><?php echo "O Preço do Produto é: ". number_format($prod_desc, 2, ',', '.')." R$"?></p>
-                      <?php echo "O valor do Desconto é: ". number_format($desconto, 2, ',', '.')."%"?></p>
-                      <?php echo "O Valor Total é: ". number_format($comDesconto, 2, ',', '.')." R$"?></p></p>
-                    </div>
 
       </div><!-- /.container-fluid -->
     </section>

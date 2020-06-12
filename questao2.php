@@ -82,6 +82,10 @@
                         <input type="number" min="1" class="form-control" id="val3" name="val3" placeholder="Ex.: 100" required>
                         </div>
                     </div>
+                    <div class="alert alert-info alert-dismissible">
+                      <h5><i class="icon fas fa-check"></i><b>RESULTADO!</b></h5>
+                      <p> <?php echo "Sua Media Final é: ".media($num1,$num2,$num3);?></p>
+                    </div>
                     </div>
                      <!-- /.card-body -->
                      <div class="card-footer">
@@ -90,12 +94,6 @@
                     <!-- /.card-footer -->
                 </form>
             </div>
-
-                <div class="alert alert-info alert-dismissible">
-                  <h5><i class="icon fas fa-check"></i><b>RESULTADO!</b></h5>
-                  <p> <?php echo "Sua Media Final é: ".media($num1,$num2,$num3);?></p>
-                </div>
-    
 
       </div><!-- /.container-fluid -->
     </section>

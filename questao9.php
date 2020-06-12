@@ -67,6 +67,14 @@
                         <input type="number"  class="form-control" id="val" name="val" placeholder="Ex.: 1000 R$" required>
                         </div>
                     </div>
+                    <div class="alert alert-info alert-dismissible">
+                      <h5><i class="icon fas fa-check"></i><b>RESULTADO!</b></h5>
+                      <p><?php
+                      echo ("<p>Valor a vista: R$ ". number_format($precoVista, 2, ',', '.'));
+                      echo ("<p>Valor com juros de 0,16 %: R$ ".number_format($precoJuros, 2, ',', '.')); 
+                      echo ("<p>em 10 parcelas de: R$" .number_format($valorParcela, 2, ',', '.'));
+                      ?></p>
+                    </div>
                     </div>
                     <!-- /.card-body -->
                     <div class="card-footer">
@@ -76,15 +84,6 @@
                 </form>
             </div>
     
-            <div class="alert alert-info alert-dismissible">
-                  <h5><i class="icon fas fa-check"></i><b>RESULTADO!</b></h5>
-                  <p><?php
-                   echo ("<p>Valor a vista: R$ ". number_format($precoVista, 2, ',', '.'));
-                   echo ("<p>Valor com juros de 0,16 %: R$ ".number_format($precoJuros, 2, ',', '.')); 
-                   echo ("<p>em 10 parcelas de: R$" .number_format($valorParcela, 2, ',', '.'));
-                   ?></p>
-                </div>
-
       </div><!-- /.container-fluid -->
     </section>
     <!-- /.content -->

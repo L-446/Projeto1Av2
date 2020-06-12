@@ -77,6 +77,10 @@
                         <input type="number" min="1" class="form-control" id="numb2" name="numb2" placeholder="Ex.: 100" required>
                         </div>
                     </div>
+                    <div class="alert alert-info alert-dismissible">
+                          <h5><i class="icon fas fa-check"></i><b>RESULTADO!</b></h5>
+                          <p><?php echo "O resultado é: ".resultado($number1,$number2);?></p>
+                    </div>
                     </div>
                      <!-- /.card-body -->
                      <div class="card-footer">
@@ -84,12 +88,7 @@
                     </div>
                     <!-- /.card-footer -->
                 </form>
-            </div>
-    
-            <div class="alert alert-info alert-dismissible">
-                  <h5><i class="icon fas fa-check"></i><b>RESULTADO!</b></h5>
-                  <p><?php echo "O resultado é: ".resultado($number1,$number2);?></p>
-            </div>
+            </div>  
 
       </div><!-- /.container-fluid -->
     </section>

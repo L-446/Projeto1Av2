@@ -99,17 +99,16 @@ if($num01  && $num02){
                 </div>
               </div>
             </div>
+                <div class="alert alert-info alert-dismissible">
+                  <h5><i class="icon fas fa-check"></i><b>RESULTADO!</b></h5>
+                  <p><?php echo "O resultado do seu calculo é: ".$resul ;?></p>
+                </div>
     </div>
                   <div class="card-footer">
                     <button type="botton" class="btn btn-info">Calcular</button>
                     </div>
      </form>
      </div>
-
-     <div class="alert alert-info alert-dismissible">
-                  <h5><i class="icon fas fa-check"></i><b>RESULTADO!</b></h5>
-                  <p><?php echo "O resultado do seu calculo é: ".$resul ;?></p>
-                </div>
 
      </div><!-- /.container-fluid -->
     </section>
